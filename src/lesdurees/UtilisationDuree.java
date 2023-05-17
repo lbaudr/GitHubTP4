@@ -10,6 +10,8 @@ import java.util.Scanner;
  * Utilisation des méthodes traitant les durées
  */
 public class UtilisationDuree {
+	
+	// Ceci est un commentaire inutile
 
     /**
      * @param args the command line arguments
