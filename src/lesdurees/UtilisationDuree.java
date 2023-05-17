@@ -58,12 +58,15 @@ public class UtilisationDuree {
 	public static void testEstChaineDuree() {
 	    Scanner entree = new Scanner(System.in);
 	    String phrase;
-	    System.out.print("Entrez une chaine : ");
+	    System.out.print("Vous allez entrer une chaîne et le programme vérifiera"
+	    		+ "si elle est bien dans le format hh:mm:ss"
+	    		+ "\nLe séparateur ':' peut être remplacé oa n'importe quel caractère."
+	    		+ "\t==> ");
 	    phrase = entree.nextLine();
 	    if (DureeHMS.estChaineDuree(phrase)) {
-	        System.out.println("OK !!");
+	        System.out.println("La chaîne " + phrase + " respecte bien le format hh:mm:ss.");
 	    } else {
-	        System.out.println("ERREUR !!! ");
+	        System.out.println("La chaîne " + phrase + " ne respecte pas le format hh:mm:ss.");
 	    }
 	}
 
