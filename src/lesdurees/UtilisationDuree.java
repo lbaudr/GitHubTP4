@@ -16,6 +16,8 @@ public class UtilisationDuree {
      */
     public static void main(String[] args) {
          testEstChaineDuree();
+         testCombienDifferente();
+         testOrdre();
     }
     
 
@@ -58,15 +60,15 @@ public class UtilisationDuree {
 	public static void testEstChaineDuree() {
 	    Scanner entree = new Scanner(System.in);
 	    String phrase;
-	    System.out.print("Vous allez entrer une chaîne et le programme vérifiera"
+	    System.out.print("Vous allez entrer une chaine et le programme verifiera"
 	    		+ "si elle est bien dans le format hh:mm:ss"
-	    		+ "\nLe séparateur ':' peut être remplacé oa n'importe quel caractère."
-	    		+ "\t==> ");
+	    		+ "\nLe separateur ':' peut etre remplace par n'importe quel caractere."
+	    		+ "\n\t==> ");
 	    phrase = entree.nextLine();
 	    if (DureeHMS.estChaineDuree(phrase)) {
-	        System.out.println("La chaîne " + phrase + " respecte bien le format hh:mm:ss.");
+	        System.out.println("La chaine " + phrase + " respecte bien le format hh:mm:ss.");
 	    } else {
-	        System.out.println("La chaîne " + phrase + " ne respecte pas le format hh:mm:ss.");
+	        System.out.println("La chaine " + phrase + " ne respecte pas le format hh:mm:ss.");
 	    }
 	}
 
