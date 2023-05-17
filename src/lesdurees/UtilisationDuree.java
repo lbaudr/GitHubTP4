@@ -15,7 +15,7 @@ public class UtilisationDuree {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         testEstChaine();
+         testEstChaineDuree();
     }
     
 
@@ -55,7 +55,7 @@ public class UtilisationDuree {
 	
 	}
 
-	public static void testEstChaine() {
+	public static void testEstChaineDuree() {
 	    Scanner entree = new Scanner(System.in);
 	    String phrase;
 	    System.out.print("Entrez une chaine : ");
